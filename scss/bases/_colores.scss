@@ -1,0 +1,27 @@
+$color-body: #dc7b3b;
+$color-header-footer: rgb(235, 94, 24);
+$color-sections:rgb(236, 144, 68);
+$hover-section-2:rgb(254, 166, 94);
+
+
+header{
+    background-color: $color-header-footer;
+}
+
+
+.section-loteria-1 .section-loteria .section-loteria-2 .section-loteria-3 .section-loteria-4 .section-servicios-1 .section-servicios-2{
+    background-color: $color-sections;
+  }
+
+  .section-contacto {
+    background-color: $color-header-footer;
+  }
+
+  .section-loteria-2:hover {
+    background-color: $hover-section-2;
+    transition: all 0.6s;
+  }
+
+  footer{
+    background-color: $color-header-footer;
+  }

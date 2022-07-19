@@ -1,0 +1,948 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #dc7b3b;
+}
+body::-webkit-scrollbar {
+  width: 14px;
+  background-color: rgb(253, 115, 23);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: bisque;
+  border-radius: 100px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(247, 171, 80);
+}
+
+header {
+  background-color: rgb(235, 94, 24);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  height: 12vh;
+}
+header a img {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  padding: 25px;
+  display: flex;
+  margin-bottom: 5px;
+  transition: ease-in 0.25s;
+}
+header a img:hover {
+  width: 190px;
+  height: 190px;
+  transition: all 0.25s;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  transition: ease-in 0.2s;
+  border-radius: 14px;
+}
+header ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 14px;
+  font-size: 1.7rem;
+  transition: all 0.25s;
+}
+header nav ul li {
+  display: inline-flex;
+  padding: 5px;
+}
+
+.carousel img {
+  border-radius: 14px;
+}
+
+.section-2-negocio .image-negocio img {
+  width: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .carou {
+    width: 0;
+  }
+  .carou .carousel img {
+    width: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section-2-negocio {
+    height: 300vh;
+  }
+  .section-2-negocio .image-negocio img {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-2-negocio {
+    height: 300vh;
+  }
+  .section-2-negocio .image-negocio img {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-2-negocio {
+    height: 300vh;
+  }
+  .section-2-negocio .image-negocio img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+  }
+}
+.section-loteria-1 {
+  display: flex;
+  margin-top: 50px;
+}
+.section-loteria-1 .section-loteria {
+  display: grid;
+  height: 80vh;
+  width: 60vh;
+  background-color: rgb(236, 144, 68);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 10px;
+}
+.section-loteria-1 .pantalla {
+  grid-column: 2;
+  grid-row: 2;
+}
+.section-loteria-1 .pantalla img {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+.section-loteria-1 .parrafo-loteria {
+  grid-column: 1/6;
+  grid-row: 1;
+  margin-top: 20px;
+}
+.section-loteria-1 .parrafo-loteria p {
+  background-color: white;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: ease-in 0.3s;
+}
+.section-loteria-1 .parrafo-loteria p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.section-loteria-2 {
+  transition: ease-in 0.3s;
+  display: grid;
+  height: 80vh;
+  width: 130vh;
+  margin-left: 30px;
+  background-color: rgb(236, 144, 68);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 10px;
+}
+.section-loteria-2:hover {
+  background-color: rgb(254, 166, 94);
+  transition: all 0.6s;
+}
+.section-loteria-2 .quini-6 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.section-loteria-2 .quini-6 img {
+  object-fit: cover;
+  width: 400px;
+  height: 350px;
+  border-radius: 10px;
+}
+.section-loteria-2 .parrafo-quini {
+  grid-column: 2/5;
+  grid-row: 2;
+}
+.section-loteria-2 .parrafo-quini p {
+  background-color: white;
+  border-radius: 10px;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.4s;
+}
+.section-loteria-2 .parrafo-quini p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-loteria-2 .quini-6 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .section-loteria-2 .parrafo-quini {
+    grid-row: 3;
+    grid-column: 2;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-loteria-2 .quini-6 img {
+    object-fit: cover;
+    width: 380px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .section-loteria-1 {
+    display: block;
+  }
+  .section-loteria-2 {
+    width: 70vh;
+    margin-left: -10px;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .section-loteria-2 {
+    width: 62vh;
+  }
+}
+@media screen and (max-width: 530px) {
+  .section-loteria-1 .section-loteria {
+    width: 55vh;
+  }
+  .section-loteria-1 .section-loteria-2 {
+    width: 55vh;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-loteria-1 .section-loteria {
+    width: 45vh;
+  }
+  .section-loteria-1 .pantalla img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+  }
+  .section-loteria-1 .parrafo-loteria p {
+    font-size: 1rem;
+  }
+  .section-loteria-1 .section-loteria-2 {
+    width: 45vh;
+  }
+  .section-loteria-1 .quini-6 img {
+    object-fit: cover;
+    width: 270px;
+    height: 270px;
+  }
+  .section-loteria-1 .parrafo-quini p {
+    font-size: 1rem;
+  }
+}
+.section-loteria-3 {
+  display: grid;
+  height: 70vh;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  background-color: rgb(236, 144, 68);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 10px;
+}
+.section-loteria-3 .loto-plus {
+  grid-column: 3;
+  grid-row: 1;
+}
+.section-loteria-3 .loto-plus img {
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+}
+.section-loteria-3 .parrafo-loto {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 70px;
+}
+.section-loteria-3 .parrafo-loto p {
+  background-color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.section-loteria-3 .parrafo-loto p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+  .section-loteria-3 {
+    height: 100vh;
+  }
+  .section-loteria-3 .loto-plus {
+    grid-column: 1;
+    margin-left: 80px;
+  }
+  .section-loteria-3 .parrafo-loto {
+    grid-row: 2;
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .section-loteria-3 {
+    width: 55vh;
+  }
+  .section-loteria-3 .loto-plus {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-loteria-3 {
+    width: 45vh;
+    height: 60vh;
+    margin-left: 10px;
+  }
+  .section-loteria-3 .loto-plus {
+    margin-left: 30px;
+  }
+  .section-loteria-3 .loto-plus img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+  .section-loteria-3 .parrafo-loto {
+    margin-left: 20px;
+  }
+  .section-loteria-3 .parrafo-loto p {
+    font-size: 1rem;
+  }
+}
+.section-loteria-4 {
+  display: grid;
+  height: 500px;
+  margin-bottom: 150px;
+  background-color: rgb(236, 144, 68);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.section-loteria-4 .brinco {
+  grid-column: 1;
+  grid-row: 1;
+}
+.section-loteria-4 .brinco img {
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.section-loteria-4 .parrafo-brinco {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 120px;
+}
+.section-loteria-4 .parrafo-brinco p {
+  font-size: 2rem;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.section-loteria-4 .parrafo-brinco p:hover {
+  background-color: rgb(183, 183, 183);
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 767px) {
+  .section-loteria-4 {
+    height: 80vh;
+    height: 80vh;
+  }
+  .section-loteria-4 .brinco {
+    grid-column: 1;
+    margin-left: 60px;
+  }
+  .section-loteria-4 .parrafo-brinco {
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: 20px;
+  }
+  .section-loteria-4 .parrafo-brinco p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .section-loteria-4 {
+    width: 55vh;
+  }
+  .section-loteria-4 .brinco {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-loteria-4 {
+    width: 45vh;
+    margin-left: 10px;
+  }
+  .section-loteria-4 .brinco {
+    margin-left: 30px;
+  }
+  .section-loteria-4 .brinco img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+}
+.card {
+  margin: 0px 50px 50px;
+}
+.card img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1481px) {
+  .card {
+    margin: 0px 15px 0px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .tarjeta-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 545px) {
+  header img {
+    width: 130px;
+    height: 130px;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 453px) {
+  header header img {
+    width: 120px;
+    height: 120px;
+  }
+  header div img {
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+  }
+  .card {
+    margin: 0 0 0;
+  }
+}
+@media screen and (max-width: 394px) {
+  header ul li a {
+    display: inline-flex;
+    font-size: 1rem;
+  }
+  .card {
+    margin: 0 0 0;
+  }
+}
+.section-servicios-1 {
+  display: grid;
+  height: 500px;
+  border-radius: 14px;
+  margin-top: 50px;
+  background-color: rgb(236, 144, 68);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.section-servicios-1 .mercado-pago {
+  grid-column: 1;
+  grid-row: 1;
+}
+.section-servicios-1 .mercado-pago img {
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.section-servicios-1 .p-mercado-pago {
+  grid-column: 2/5;
+  grid-row: 1;
+  margin-top: 130px;
+  margin-left: 100px;
+}
+.section-servicios-1 .p-mercado-pago p {
+  font-size: 3rem;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  transition: ease-in 0.25s;
+}
+.section-servicios-1 .p-mercado-pago p:hover {
+  background-color: rgb(183, 183, 183);
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 991px) {
+  .section-servicios-1 {
+    height: 90vh;
+  }
+  .section-servicios-1 .mercado-pago {
+    margin-left: 110px;
+  }
+  .section-servicios-1 .p-mercado-pago {
+    grid-row: 2;
+    grid-column: 1;
+    margin-left: -10px;
+  }
+}
+@media screen and (max-width: 978px) {
+  .section-servicios-1 {
+    height: 100vh;
+  }
+  .section-servicios-1 .mercado-pago {
+    grid-column: 2;
+    margin-top: 10px;
+    margin-left: 110px;
+  }
+  .section-servicios-1 .p-mercado-pago {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+@media screen and (max-width: 481px) {
+  .section-servicios-1 .mercado-pago img {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 376px) {
+  section .section-servicios-1 {
+    height: 130vh;
+  }
+  section .section-servicios-1 .mercado-pago img {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+    border-radius: 5px;
+  }
+  section .section-servicios-1 .mercado-pago {
+    grid-column: 1;
+  }
+  section .section-servicios-1 .p-mercado-pago {
+    grid-column: 1;
+    margin-left: -5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-servicios-1 {
+    height: 120vh;
+  }
+  .section-servicios-1 .mercado-pago {
+    grid-column: 2;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .section-servicios-1 .p-mercado-pago {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+.section-servicios-2 {
+  height: 100vh;
+  border-radius: 14px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background-color: rgb(236, 144, 68);
+}
+.section-servicios-2 .parrafo-recargas p {
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  transition: ease-in 0.25s;
+  justify-content: center;
+}
+.section-servicios-2 .parrafo-recargas p:hover {
+  background-color: rgb(195, 191, 191);
+  transition: all 0.2s;
+}
+.section-servicios-2 .empresas {
+  display: flex;
+  margin-top: 160px;
+}
+.section-servicios-2 .claro {
+  margin-right: 200px;
+}
+.section-servicios-2 .claro img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+.section-servicios-2 .movistar {
+  margin-right: 200px;
+}
+.section-servicios-2 .movistar img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+.section-servicios-2 .personal {
+  margin-right: 200px;
+}
+.section-servicios-2 .personal img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section-servicios-2 .claro {
+    margin-right: 150px;
+  }
+  .section-servicios-2 .movistar {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-servicios-2 .claro {
+    margin-right: 80px;
+  }
+  .section-servicios-2 .movistar {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section-servicios-2 {
+    height: 200vh;
+  }
+  .section-servicios-2 .empresas {
+    display: block;
+    text-align: center;
+  }
+  .section-servicios-2 .claro {
+    margin-right: 0;
+    margin-bottom: 70px;
+  }
+  .section-servicios-2 .movistar {
+    margin-right: 0;
+    margin-bottom: 70px;
+  }
+  .section-servicios-2 .personal {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 376px) {
+  .section-servicios-2 {
+    height: 190vh;
+  }
+}
+.section-ubicacion .ubicacion {
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 100px;
+  width: 1200px;
+  height: 800px;
+}
+.section-ubicacion .p-ubicacion {
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  color: black;
+  font-family: sans-serif;
+  font-size: 2.3em;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  transition: ease-in 0.3s;
+}
+.section-ubicacion .p-ubicacion:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.section-ubicacion .video-youtube .p-ubicacion-2 p {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  color: black;
+  border-radius: 25px;
+  font-family: sans-serif;
+  font-size: 3.3em;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  transition: ease-in 0.3s;
+}
+.section-ubicacion .video-youtube .p-ubicacion-2 p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+.section-ubicacion .video-youtube iframe {
+  margin-left: 500px;
+}
+
+@media screen and (max-width: 1240px) {
+  .section-ubicacion .ubicacion {
+    width: 1000px;
+    height: 1000px;
+  }
+  .section-ubicacion .video-youtube iframe {
+    margin-left: 400px;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .section-ubicacion .ubicacion {
+    width: 800px;
+    height: 800px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .section-ubicacion .ubicacion {
+    width: 700px;
+    height: 700px;
+  }
+  .section-ubicacion .video-youtube iframe {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-ubicacion .ubicacion {
+    width: 500px;
+    height: 500px;
+  }
+  .section-ubicacion .video-youtube iframe {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .section-ubicacion .ubicacion {
+    width: 400px;
+    height: 400px;
+  }
+  .section-ubicacion .p-ubicacion {
+    font-size: 1rem;
+  }
+  .section-ubicacion .video-youtube .p-ubicacion-2 p {
+    font-size: 1rem;
+  }
+  .section-ubicacion .video-youtube iframe {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .section-ubicacion .ubicacion {
+    width: 350px;
+    height: 350px;
+  }
+  .section-ubicacion .p-ubicacion {
+    font-size: 1rem;
+  }
+  .section-ubicacion .video-youtube iframe {
+    margin-left: 20px;
+  }
+}
+.section-contacto {
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+  border-radius: 15px;
+  padding: 12vh;
+  background-color: rgb(235, 94, 24);
+}
+
+.section-contacto-2 {
+  margin-bottom: 100px;
+}
+.section-contacto-2 .container img {
+  object-fit: cover;
+  width: 360px;
+}
+
+footer {
+  background-color: rgb(235, 94, 24);
+  height: auto;
+  width: 99vw;
+  font-family: sans-serif;
+  padding-top: 40px;
+  color: white;
+}
+footer img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  transition: ease-in 0.25s;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+.socials a i {
+  font-size: 2rem;
+  transition: color 0.4s ease;
+}
+.socials a i:hover {
+  color: aqua;
+}
+
+header {
+  background-color: rgb(235, 94, 24);
+}
+
+.section-loteria-1 .section-loteria .section-loteria-2 .section-loteria-3 .section-loteria-4 .section-servicios-1 .section-servicios-2 {
+  background-color: rgb(236, 144, 68);
+}
+
+.section-contacto {
+  background-color: rgb(235, 94, 24);
+}
+
+.section-loteria-2:hover {
+  background-color: rgb(254, 166, 94);
+  transition: all 0.6s;
+}
+
+footer {
+  background-color: rgb(235, 94, 24);
+}
+
+.section-loteria-1 .parrafo-loteria p {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.section-loteria-1 .parrafo-loteria p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.section-loteria-2 .parrafo-quini p {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.section-loteria-2 .parrafo-quini p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.section-loteria-3 .parrafo-loto p {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.section-loteria-3 .parrafo-loto p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.section-loteria-4 .parrafo-brinco p {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.section-loteria-4 .parrafo-brinco p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.section-servicios-1 .p-mercado-pago p {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.section-servicios-1 .p-mercado-pago p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.section-servicios-2 .parrafo-recargas p {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.section-servicios-2 .parrafo-recargas p:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.p_ubicacion {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.p_ubicacion:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+.p_ubicacion_2 {
+  background-color: white;
+  transition: ease-in 0.3s;
+}
+
+.p_ubicacion_2:hover {
+  background-color: rgb(157, 155, 155);
+  transition: all 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */

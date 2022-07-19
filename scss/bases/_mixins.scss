@@ -1,0 +1,90 @@
+@mixin textos($fondo) {
+    background-color: $fondo;
+    transition: ease-in 0.3s;
+}
+
+@mixin hov-textos{
+    background-color: rgb(157, 155, 155);
+    transition: all 0.3s;
+}
+
+
+.section-loteria-1 .parrafo-loteria p {
+    @include textos((white))
+  }
+
+  
+  .section-loteria-1 .parrafo-loteria p:hover {
+    @include hov-textos;
+  }
+
+
+
+
+  .section-loteria-2 .parrafo-quini p {
+    @include textos((white))
+  }
+  .section-loteria-2 .parrafo-quini p:hover {
+    @include hov-textos;
+  }
+
+
+
+  .section-loteria-3 .parrafo-loto p {
+    @include textos((white))
+  }
+  .section-loteria-3 .parrafo-loto p:hover {
+    @include hov-textos;
+  }
+
+
+
+
+  .section-loteria-4 .parrafo-brinco p {
+    @include textos((white))
+  }
+  .section-loteria-4 .parrafo-brinco p:hover {
+    @include hov-textos;
+  }
+
+
+
+
+  .section-servicios-1 .p-mercado-pago p {
+    @include textos((white))
+  }
+  .section-servicios-1 .p-mercado-pago p:hover {
+    @include hov-textos;
+  }
+                                                  
+
+
+
+
+  .section-servicios-2 .parrafo-recargas p {
+    @include textos((white))
+  }
+  
+  .section-servicios-2 .parrafo-recargas p:hover {
+    @include hov-textos;
+  }
+
+
+
+  .p_ubicacion {
+    @include textos((white))
+  }
+  .p_ubicacion:hover {
+    @include hov-textos;
+  }
+
+
+
+
+  .p_ubicacion_2 {
+    @include textos((white))
+ }
+  .p_ubicacion_2:hover {
+    @include hov-textos;
+  }
+

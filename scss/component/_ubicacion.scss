@@ -1,0 +1,167 @@
+.section-ubicacion{
+
+& .ubicacion{
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+    width: 1200px;
+    height: 800px;
+}
+
+& .p-ubicacion{
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    color: black;
+    font-family: sans-serif;
+    font-size: 2.3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    transition: ease-in 0.3s;
+
+
+&:hover{
+    background-color: rgb(157, 155, 155);
+    transition: all 0.3s;
+
+}
+
+}
+
+}
+
+.section-ubicacion{
+
+& .video-youtube{
+
+& .p-ubicacion-2 p{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    color: black;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 3.3em;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    transition: ease-in 0.3s;
+
+
+&:hover{
+    background-color: rgb(157, 155, 155);
+    transition: all 0.3s;
+
+}
+
+}
+& iframe{
+    margin-left: 500px;
+}
+}
+}
+
+
+@media screen and (max-width:1240px){
+    .section-ubicacion{
+    & .ubicacion{
+        width: 1000px;
+        height: 1000px;
+    }
+
+    & .video-youtube{
+
+        & iframe{
+            margin-left: 400px;
+        }
+    }
+}
+}
+@media screen and (max-width:1055px){
+    .section-ubicacion{
+    & .ubicacion{
+        width: 800px;
+        height: 800px;
+    }
+}
+}
+
+@media screen and (max-width:950px){
+    .section-ubicacion{
+    & .ubicacion{
+        width: 700px;
+        height: 700px;
+    }
+
+    & .video-youtube{
+
+        & iframe{
+            margin-left: 200px;
+        }
+    }
+}
+}
+@media screen and (max-width:767px){
+    .section-ubicacion{
+    .ubicacion{
+        width: 500px;
+        height: 500px;
+    }
+
+    & .video-youtube{
+
+        & iframe{
+            margin-left: 100px;
+        }
+    }
+}
+}
+
+@media screen and (max-width:520px){
+    .section-ubicacion{
+    .ubicacion{
+        width: 400px;
+        height: 400px;
+    }
+
+  
+
+    & .p-ubicacion{
+        font-size: 1rem;
+    }
+
+  & .video-youtube{
+
+    & .p-ubicacion-2 p{
+        font-size: 1rem;
+    }
+
+         & iframe{
+            margin-left: 50px;
+        }
+    }
+}
+}
+
+@media screen and (max-width:410px){
+    .section-ubicacion{
+    .ubicacion{
+        width: 350px;
+        height: 350px;
+    }
+
+  
+
+    & .p-ubicacion{
+        font-size: 1rem;
+    }
+
+  & .video-youtube{
+
+   
+         & iframe{
+            margin-left: 20px;
+        }
+    }
+}
+}

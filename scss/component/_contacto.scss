@@ -1,0 +1,19 @@
+
+.section-contacto{
+    margin-top: 10vh;
+    margin-bottom: 25vh;
+    border-radius: 15px;
+    padding: 12vh;
+    background-color: rgb(235, 94, 24);
+}
+
+.section-contacto-2{
+    margin-bottom: 100px;
+
+
+& .container img{
+    object-fit: cover;
+    width: 360px;
+}
+
+}
